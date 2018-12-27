@@ -157,6 +157,12 @@
     
 }
 
+@media screen and (max-width: 1440px){
+    .main_screen{
+        padding: 50px 0 112px 0;
+    }
+}
+
 @media screen and (max-width: 1270px){
     .main_screen_content{
         flex-wrap: wrap;
