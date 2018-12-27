@@ -1,0 +1,608 @@
+extends ../template
+
+block varibles
+    - var title = "Planeta"
+
+block content
+    .content
+        //- header.header
+        //-     .wrapper
+        //-         .header_content
+        //-             .logo
+        //-                 img(src="./images/logo.png?1", alt="")
+        //-             .numbers
+        //-                 .number
+        //-                     .label USA 
+        //-                     a(href="tel:+17733124258") + 1 77 33124258
+        //-                 .number
+        //-                     .label EU 
+        //-                     a(href="tel:+48828881019") + 48 82 8881019
+        //-                 .callfree
+        //-                     span Call Free 24/7
+        //-             .menu
+        //-                 a(href="#").paragraph O Firmie
+        //-                 .r
+        //-                 a(href="#").paragraph Uslugi
+        //-                 .r
+        //-                 a(href="#").paragraph Sklep
+        //-                 .r
+        //-                 a(href="#").paragraph Wsparcie
+        //-                 .r
+        //-                 a(href="#").paragraph Oferty
+        //-                 .r
+        //-                 a(href="#").paragraph Konto osobiste
+        //-                 .r
+        //-                 a(href="#").paragraph Test predcosci
+        //-                 .r
+        //-                 a(href="#").paragraph Kontakt
+        //-             .lang
+        //-                 .pl
+        //-                     img(src="./images/pl.png", alt="", width="15")
+        //-                     span PL
+        //-                 .en
+        //-                     img(src="./images/uk.png", alt="", width="15")
+        //-                     span EN
+
+        section.main_screen
+            .wrapper
+                .main_screen_content             
+                    .left
+                        h1 
+                            | Ogłądaj 
+                            span polską TV
+                            br
+                            | 3 dni za 
+                            span darmo
+                    .right
+                        form
+                            .formwrap
+                                .title
+                                    p Krok 1: Wypełnij tą tabelę , żeby obejrzeć Planeta PL  
+                                        span PLATINUM
+                                textarea(type="text", placeholder="Przedstaw się")
+                                textarea(type="email", placeholder="Zostaw swój e-mai")
+                                textarea(type="text", placeholder="Wskaż kraj pobytu")
+                                textarea(type="tel", placeholder="Zostaw swój numer")
+                                .check
+                                    label.checkboxcustom
+                                        input(class="checkbox", type="checkbox", name="radio-test", checked)
+                                        span.checkbox-custom
+                                        span.label Chcę śledzić obniżki cen po e-mail
+                            .blockbutton
+                                button.button Oglądać bezpłatnie 3 dni
+
+        .callback
+            img(src="images/phone.png", alt="")
+            span Zamówić telefon
+
+        section.section2
+            .wrapper
+                .section2_content 
+                    .title
+                        h2 
+                            | Jak otrzymać   
+                            span testowy dostęp 
+                            | do Planeta PL 
+                            span PLATINIUM
+
+                    .blockblocks
+                        .blockitem
+                            img(src="./images/1.png", alt="")
+                            .text
+                                .text-title Wyślij 
+                                .text-desc nam tabelę powyżej
+                        .blockitem
+                            img(src="./images/2.png", alt="")
+                            .text
+                                .text-title Sprawdź  
+                                .text-desc swoją pocztową skrzynkę
+                        .blockitem
+                            img(src="./images/3.png", alt="")
+                            .text
+                                .text-title Oglądaj 
+                                .text-desc Planeta PL
+                            
+        section.section3
+            .wrapper
+                .section3_content
+                    .title 
+                        h2 
+                            | Zapoznaj się z 
+                            span przewagami 
+                            | Planeta PL
+                    .blockblocks
+                        .blockitem
+                            img(src="images/icon1.png", alt="")
+                            .descriptionblock
+                                .descriptionblock__title
+                                    span On-line TV
+                                .descriptionblock__text
+                                    p Dostępne we wszystkich państwach świata. Wszystko, co niezbędne - to stabilne połączenie internetowe .
+                                    p Wykorzystujemy najnowocześniejsze technologie dla oglądania TV w reżimie on-line (innymi słowami, IPTV ).
+                        .blockitem
+                                img(src="images/icon2.png", alt="")
+                                .descriptionblock
+                                    .descriptionblock__title
+                                        span 2000+ filmów
+                                    .descriptionblock__text
+                                        p Kolekcja polskich i polskojęzycznych filmów, liczy ponad 2000 pozycji.
+                                        p Jest możliwość katalogowania  filmów wg  gatunku.
+                        .blockitem
+                                img(src="images/icon3.png", alt="")
+                                .descriptionblock
+                                    .descriptionblock__title
+                                        span Jakość HD
+                                    .descriptionblock__text
+                                        p Full HD zawierają do 5 razy więcej pikseli, aniżeli zwyczajne DVD wideo.
+                                        p Konieczny jest  stabilne internetowe połączenie z szybkością od 4-8 Мбит/sek dla prawidłowego odbioru.
+                        
+                        .blockitem
+                            img(src="images/icon4.png", alt="")
+                            .descriptionblock
+                                .descriptionblock__title
+                                    span Rodzicielska kontrola
+                                .descriptionblock__text
+                                    p Kontrolujcie dostęp do programów  dla dorosłych.
+                                    p  Ograniczcie dostęp do programów i filmów za pomocą hasła rodzicielskiej kontroli.
+                        .blockitem
+                                img(src="images/icon5.png", alt="")
+                                .descriptionblock
+                                    .descriptionblock__title
+                                        span 150+ kanałów
+                                    .descriptionblock__text
+                                        p Więcej 150 polskich i polskojęzycznych kanałów.
+                                        p Oglądajcie  bez ograniczeń Polsat, Polonia TV, TVP, TV4, TV6, Eska TV, Polo TV, BBC, Discovery i wiele innych.
+                        .blockitem
+                                img(src="images/icon6.png", alt="")
+                                .descriptionblock
+                                    .descriptionblock__title
+                                        span TV archiwum na 14 dni
+                                    .descriptionblock__text
+                                        p Oglądajcie programy i przedstawienia, kiedy chcecie.
+                                        p TV podstroi się  pod waszą strefę czasową i sposób życia. Wybieracie, kiedy patrzyć.
+                        
+                        .blockitem
+                            img(src="images/icon7.png", alt="")
+                            .descriptionblock
+                                .descriptionblock__title
+                                    span Serwis  24/7
+                                .descriptionblock__text
+                                    p My gotowi jesteśmy pomóc wszystkim naszym klientom bez względu na kraj pobytu i strefę czasową.
+                                    p Nasz serwis jest dostępny w dowolnym czasie całodobowo, a telefony na gorącą linię linię są bezpłatne.
+                        .blockitem
+                                img(src="images/icon8.png", alt="")
+                                .descriptionblock
+                                    .descriptionblock__title
+                                        span Multiroom
+                                    .descriptionblock__text
+                                        p Podłączajcie do  trzech  odbiorników TV jednocześnie.
+                                        p Oglądajcie  różne kanały w różnych pokojach bez ograniczeń.
+                        .blockitem
+                                img(src="images/icon9.png", alt="")
+                                .descriptionblock
+                                    .descriptionblock__title
+                                        span Platforma wielokanałowa
+                                    .descriptionblock__text
+                                        p Przegląd  filmów i TV jest dostępny na  PK, mobilnych urządzeniach, planszetach i Smart TV.
+                                        //- p Watch on Windows, Mac & Linux browsers Available on iOS and Android mobile operational systems via 3G and 4G internet
+                    .blockbutton
+                        button.button.popap_form Spróbować  Planeta PL bezpłatnie na 3 dni
+
+        section.section4
+            .wrapper
+                .section4_content
+                    .title
+                        h2  Wybieraj swoją taryfę, żeby podłączyć się do Planeta PL
+                    .blockblocks
+                        .blockitem 
+                            .blockitem__titleblock(style="background-image: url(./images/goldbg.png)") gold
+                            .blockitem__paragraph
+                                img(src="./images/pac1.png", alt="")
+                                span 150 kanałów
+                            .blockitem__paragraph(style="background-color:#fcfcfc;")
+                                img(src="./images/pac2.png", alt="")
+                                span 2000 filmów
+                            .blockitem__paragraph
+                                img(src="./images/pac3.png", alt="")
+                                span HD jakość i streaming TV
+                            .blockitem__paragraph(style="background-color:#fcfcfc;")
+                                img(src="./images/pac4.png", alt="")
+                                span On-line radio
+                            .blockitem__paragraph
+                                img(src="./images/pac5.png", alt="")
+                                span Multiroom
+                            .blockitem__paragraph(style="background-color:#fcfcfc;")
+                                img(src="./images/pac6.png", alt="")
+                                span Wsparcie po polsku 24/7
+                            .blockitem__paragraph
+                                img(src="./images/pac7.png", alt="")
+                                span Zapis filmów i programów
+                            .blockitem__paragraph(style="background-color:#fcfcfc;opacity:0.3;")
+                                img(src="./images/pac8.png", alt="")
+                                span Rodzicielska kontrola
+                            .blockitem__paragraph(style="opacity:0.3;")
+                                img(src="./images/pac9.png", alt="")
+                                span Filmy dla dorosłych
+                            
+                            .block_radiobutton
+                                label.radio1
+                                    input(class="radio", type="radio", name="radio-test")
+                                    span.radio-custom
+                                    span.label 
+                                        | 1 miesiąc 
+                                        span €17.75
+                                label.radio2
+                                    input(class="radio", type="radio", name="radio-test")
+                                    span.radio-custom
+                                    span.label 3 miesiące 
+                                        span €49.95 (i oszczędzaj €3.90)
+                                    p.description 1 miesiąc €16.65 Cena 
+                                label.radio3
+                                    input(class="radio", type="radio", name="radio-test")
+                                    span.radio-custom
+                                    span.label 
+                                        | 6 miesięcy 
+                                        span €94.95 (i oszczędzaj €12.75)
+                                    p.description 1 miesiąc €15.82 Cena 
+                                label.radio4
+                                    input(class="radio", type="radio", name="radio-test")
+                                    span.radio-custom
+                                    span.label 12 miesięcy 
+                                        span €179.95 (i oszczędzaj €35.45) 
+                                    p.description 1 miesiąc €14.99 Cena 
+
+                            .block_button
+                                button.button Wybieraj GOLD
+                            
+                        .blockitem
+                            .blockitem__titleblock(style="background-image: url(./images/bg2.png)") PLAtinum
+                                .badge popular
+                            .blockitem__paragraph
+                                img(src="./images/pac1.png", alt="")
+                                span 150 kanałów
+                            .blockitem__paragraph(style="background-color:#fcfcfc;")
+                                img(src="./images/pac2.png", alt="")
+                                span 2000 filmów
+                            .blockitem__paragraph
+                                img(src="./images/pac3.png", alt="")
+                                span HD jakość i streaming TV
+                            .blockitem__paragraph(style="background-color:#fcfcfc;")
+                                img(src="./images/pac4.png", alt="")
+                                span On-line radio
+                            .blockitem__paragraph
+                                img(src="./images/pac5.png", alt="")
+                                span Multiroom
+                            .blockitem__paragraph(style="background-color:#fcfcfc;")
+                                img(src="./images/pac6.png", alt="")
+                                span Wsparcie po polsku 24/7
+                            .blockitem__paragraph
+                                img(src="./images/pac7.png", alt="")
+                                span Zapis filmów i programów
+                            .blockitem__paragraph(style="background-color:#fcfcfc;")
+                                img(src="./images/pac8.png", alt="")
+                                span Rodzicielska kontrola
+                            .blockitem__paragraph
+                                img(src="./images/pac9.png", alt="")
+                                span Filmy dla dorosłych
+                            
+                            .block_radiobutton
+                                label.radio1
+                                    input(class="radio", type="radio", name="radio-test")
+                                    span.radio-custom
+                                    span.label 
+                                        |  1 miesiąc 
+                                        span €22.95
+                                label.radio2
+                                    input(class="radio", type="radio", name="radio-test")
+                                    span.radio-custom
+                                    span.label 3 miesiące 
+                                        span €63.95 (i oszczędzaj €4.90)
+                                    p.description 1 miesiąc €21.31 Cena 
+                                label.radio3
+                                    input(class="radio", type="radio", name="radio-test")
+                                    span.radio-custom
+                                    span.label 
+                                        | 6 miesięcy 
+                                        span €119.95 (i oszczędzaj €17.75)
+                                    p.description  1 miesiąc €19.99 Cena 
+                                label.radio4
+                                    input(class="radio", type="radio", name="radio-test")
+                                    span.radio-custom
+                                    span.label 12 miesięcy 
+                                        span €229.95 (i oszczędzaj €45.45) 
+                                    p.description 1 miesiąc €19.16 Cena 
+
+                            .block_button
+                                button.button Wybieraj PLATINUM
+
+        section.section7
+            .wrapper
+                .section7_content
+                    .left7   
+                        .left__img
+                            img(src="./images/decoder.png", alt="")  
+                        
+                    .right7
+                        .right7__title
+                            h2 dekoder
+                        .right7__text
+                            p Ultra kompaktowy IPTV / VOD / OTT odtwarzacz, który odtwarza wszystkie znane audio i wideo formaty, a także pozwala odtwarzać  on-line TV w jakości Full HD. Atrakcyjny design i przyjemna cena - główne przewagi tego modelu. Ten dekoder może być podłączony do zwyczajnego kablowego TV czy przez Wi - Fi.
+                            p Rozmiary dekodera : 9,5 na 9,5 cm.
+                            p Gwarantowany powrót środków w ciągu 14 dni.
+                        //- .right7__price
+                        //-     p Order Decoder 
+                        //-         span €50.00
+                        .right7__button
+                            button.button Kupuj 1 za 50 euro     
+                            button.button Kupuj 2 za 75 euro  
+
+        section.section5
+            .wrapper   
+                .section5_content
+                    .title
+                        h2 
+                            | Otrzymaj dekoder czy 2 miesiące  
+                            span bezpłatnie
+                    //- .desc
+                    //-     span BOUGHT 299 OUT OF 300
+
+                    .block_button_custom
+                        .block_button_custom__left
+                            span mi nie jest  potrzebny dekoder
+                        .block_button_custom__center
+                            .round
+                        .block_button_custom__right.bold_text
+                            span Mi jest potrzebny dekoder
+                    .blockcards.visibleblock
+                        .itemwrap
+                            .blockcardsitem
+                                .blockcardsitem__texttop
+                                    p(style="min-height: 85px;")
+                                        //- | subscribe for
+                                        //- br  
+                                        //- span 3 MONTHS 
+                                        //- | and get 
+                                        span 3 miesięcy 
+                                        | prenumeraty 
+                                        br
+                                        //- | za ceną 
+                                        //- br
+                                        //- span 2 miesięcy!
+                                        //- br
+                                        //- span  dekoder 
+                                        //-     br  
+                                        //-     | gratis!
+                                    .textabs
+                                        span + dekoder gratis
+                                    img(src="./images/decoder_mini.png", alt="")
+                                .blockcardsitem__textmidle
+                                    p
+                                        | Prenumeruje wszystko za 
+                                        sup.smolindex €
+                                        span 68.85
+                                .section5_button
+                                    button.button kupić
+                                .blockcardsitem__textbottom
+                                    p
+                                        | i oszczędzać 
+                                        span €50.00
+                        .itemwrap
+                            .blockcardsitem.itemactive
+                                .blockcardsitem__texttop
+                                    p 
+                                        //- | subscribe for 
+                                        
+                                        //- br
+                                        //- span 6 months 
+                                        //- | and pay 
+                                        //- br
+                                        //- span only for 5!
+                                        span 6 miesięcy 
+                                        | prenumeraty 
+                                        br
+                                        | za ceną 
+                                        br
+                                        span 5 miesięcy!
+                
+                                    img(src="./images/decoder_mini.png", alt="")
+                                    .textabs
+                                        span + dekoder gratis
+                                .blockcardsitem__textmidle
+                                    p
+                                        | Prenumeruje wszystko za 
+                                        sup.smolindex €
+                                        span 114.75
+                                .section5_button
+                                    button.button kupić
+                                .blockcardsitem__textbottom
+                                    p
+                                        | i oszczędzać 
+                                        span €72.95
+                        .itemwrap
+                            .blockcardsitem
+                                .blockcardsitem__texttop
+                                    p 
+                                        //- | Subscribe for 
+                                        //- br
+                                        //- span 12 months 
+                                        //- | and pay 
+                                        //- br
+                                        //- span only for 7!
+                                        span 12 miesięcy 
+                                        | prenumeraty 
+                                        br
+                                        | za ceną 
+                                        br
+                                        span 7 miesięcy!
+                                            
+                                    img(src="./images/decoder_mini.png", alt="")
+                                    .textabs
+                                        span + dekoder gratis
+                                .blockcardsitem__textmidle
+                                    p
+                                        | Prenumeruje wszystko za 
+                                        sup.smolindex €
+                                        span 160.65
+                                .section5_button
+                                    button.button kupić
+                                .blockcardsitem__textbottom
+                                    p
+                                        | i oszczędzać 
+                                        span €164.75
+
+                    .blockcards
+                        .itemwrap
+                            .blockcardsitem
+                                .blockcardsitem__texttop
+                                    p(style="min-height: 85px;")
+                                        //- | subscribe for
+                                        //- br  
+                                        //- span 3 MONTHS 
+                                        //- | and get 
+                                        span 3 miesięcy 
+                                        | prenumeraty 
+                                        br
+                                        //- | za ceną 
+                                        //- br
+                                        //- span 2 miesięcy!
+                                        //- br
+                                        //- span + 2 miesiące 
+                                        //-     br  
+                                        //-     | bezpłatnie!
+                                    .textabs(style="width: 158px;font-size: 26px;")
+                                        span + 2 miesiące bezpłatnie!
+                                    img(src="./images/box2.png", alt="", style="width: 148px;height: 115px; right: 26px;bottom: 21px;")
+                                .blockcardsitem__textmidle
+                                    p
+                                        | Prenumeruje wszystko za 
+                                        sup.smolindex €
+                                        span 68.85
+                                .section5_button
+                                    button.button kupić
+                                .blockcardsitem__textbottom
+                                    p
+                                        | i oszczędzać 
+                                        span €50.00
+                        .itemwrap
+                            .blockcardsitem.itemactive
+                                .blockcardsitem__texttop
+                                    p 
+                                        //- | subscribe for 
+                                        
+                                        //- br
+                                        //- span 6 months 
+                                        //- | and pay 
+                                        //- br
+                                        //- span only for 5!
+                                        span 6 miesięcy 
+                                        | prenumeraty 
+                                        br
+                                        | za ceną 
+                                        br
+                                        span 5 miesięcy!
+                
+                                    img(src="./images/box2.png", alt="", style="width: 148px;height: 115px; right: 26px;bottom: 21px;")
+                                    .textabs(style="width: 158px;font-size: 26px;")
+                                        span + 2 miesiące bezpłatnie
+                                .blockcardsitem__textmidle
+                                    p
+                                        | Prenumeruje wszystko za 
+                                        sup.smolindex €
+                                        span 114.75
+                                .section5_button
+                                    button.button kupić
+                                .blockcardsitem__textbottom
+                                    p
+                                        | i oszczędzać 
+                                        span €72.95
+                        .itemwrap
+                            .blockcardsitem
+                                .blockcardsitem__texttop
+                                    p 
+                                        //- | Subscribe for 
+                                        //- br
+                                        //- span 12 months 
+                                        //- | and pay 
+                                        //- br
+                                        //- span only for 7!
+                                        span 12 miesięcy 
+                                        | prenumeraty 
+                                        br
+                                        | za ceną 
+                                        br
+                                        span 7 miesięcy!
+                                            
+                                    img(src="./images/box2.png", alt="", style="width: 148px;height: 115px; right: 26px;bottom: 21px;")
+                                    .textabs(style="width: 158px;font-size: 26px;")
+                                        span + 2 miesiące bezpłatnie
+                                .blockcardsitem__textmidle
+                                    p
+                                        | Prenumeruje wszystko za 
+                                        sup.smolindex €
+                                        span 160.65
+                                .section5_button
+                                    button.button kupić
+                                .blockcardsitem__textbottom
+                                    p
+                                        | i oszczędzać 
+                                        span €164.75
+            .customstring
+                img(src="./images/redstring2.png", alt="")
+
+        section.section6
+            .wrapper
+                .section6_content
+                    .section6_content__block
+                        span limitowany czas!
+                    .section6_content__block
+                        span 20 dni 10:15:00
+
+        section.section9
+            
+        section.section8
+            .wrapper
+                .section8_content
+                    .section8_content__left
+                        .lefttitle
+                            span otrzymuj oferty 
+                                br
+                                | na e-mail
+                    .section8_content__right
+                        form
+                            .form_content
+                                textarea(type="email", placeholder="zapisz tu swój e-mail")
+                                button.button.button_white(type="submit") kontroluj ceny
+
+        //- footer.footer
+        //-     .wrapper
+        //-         .footer_content
+        //-             .footer__left
+        //-                 a(href="#").logo PlanetaPLTV 2018
+        //-                 img(src="./images/visa.png", alt="")
+
+        //-             .footer__right
+        //-                 .menu
+        //-                     a(href="#").paragraph O Firmie
+        //-                     .r
+        //-                     a(href="#").paragraph Uslugi
+        //-                     .r
+        //-                     a(href="#").paragraph Sklep
+        //-                     .r
+        //-                     a(href="#").paragraph Wsparcie
+        //-                     .r
+        //-                     a(href="#").paragraph Oferty
+        //-                     .r
+        //-                     a(href="#").paragraph Konto osobiste
+        //-                     .r
+        //-                     a(href="#").paragraph Test predcosci
+        //-                     .r
+        //-                     a(href="#").paragraph Kontakt
+        //-                 .button_top
+        //-                     .blockbutton_top
+        //-                         img(src="./images/arrow-point-to-right.png", alt="")
+
+
+
+
+        include ../common/popaps.pug
+                

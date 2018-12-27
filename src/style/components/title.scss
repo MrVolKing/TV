@@ -1,0 +1,36 @@
+h1{
+    font-family: "titillium";
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $white;
+    span{
+        color: $buttoncolor;
+    }
+}
+
+
+
+h2{
+    text-align: center;
+    color: $titlecolor;
+    font-family: "titillium";
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    span{
+        color: $buttoncolor;
+    }
+}
+
+@media screen and (max-width: 580px){
+    h1{
+        font-size: 37px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    h2{
+        font-size: 30px;
+    }
+}

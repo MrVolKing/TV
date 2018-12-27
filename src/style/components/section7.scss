@@ -1,0 +1,87 @@
+.section7{
+    background-color: $white;;
+    padding: 58px 0 114px 0;
+}
+
+.section7_content{
+    display: flex;
+    padding-left: 76px;
+    .left7{
+        img{
+            border: 1px solid #e8e8e8;
+        }
+    } 
+    .right7{
+        margin-left: 40px;
+        &__title{
+            h2{
+                text-align: left !important;
+                line-height: 30px;
+                margin-bottom: 27px;
+            }
+        }
+        &__text{
+            color: $textcolor;
+            font-size: 16px;
+            font-weight: 400;
+            p:first-child{
+                margin-bottom: 42px;
+            }
+        }
+        &__price{
+            padding-top: 16px;
+            padding-bottom: 29px;
+            p{
+                font-family: "titillium";
+                font-size: 20px;
+                font-weight: 400;
+                color: $black;
+                span{
+                    color: #c80600;
+                    font-weight: 700;
+                }
+            }
+        }
+        &__button{
+            padding-top: 42px;
+            button{
+                width: 334px;
+            }
+            button:first-child{
+                margin-right: 45px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .section7_content{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        .right7{
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 730px){
+    .right7__button{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        button{
+            width: 100% !important;
+        }
+    }
+    .section7_content .right7__button button:first-child{
+        margin: 0 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .section7{
+        padding: 58px 0 54px 0; 
+    }
+}
