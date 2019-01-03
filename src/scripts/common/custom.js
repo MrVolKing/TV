@@ -14,15 +14,15 @@
 
 window.swithblockcards = function () {
     alert(3);
-    // $('.block_button_custom__center').toggleClass('btn_acnive');
+    $('.block_button_custom__center').toggleClass('btn_acnive');
     // alert('l:' + $('.blockcards').length);
-    // $('.blockcards').toggleClass('visibleblock');
-    // $('.block_button_custom__left').toggleClass('bold_text');
-    // $('.block_button_custom__right').toggleClass('bold_text');
+    $('.blockcards').toggleClass('visibleblock');
+    $('.block_button_custom__left').toggleClass('bold_text');
+    $('.block_button_custom__right').toggleClass('bold_text');
 
 
-    // $('.blockcardsitem').removeClass('itemactive');
-    // $('.blockcards > .itemwrap:nth-of-type(2) .blockcardsitem ').addClass('itemactive');
+    $('.blockcardsitem').removeClass('itemactive');
+    $('.blockcards > .itemwrap:nth-of-type(2) .blockcardsitem ').addClass('itemactive');
 }
 
 
