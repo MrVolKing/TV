@@ -1,6 +1,20 @@
-$(document).on('click', '.block_button_custom__center', function(){
+// $(document).on('click', '.block_button_custom__center', function(){
+//     // alert(3);
+//     // $(this).toggleClass('btn_acnive');
+//     // alert('l:' + $('.blockcards').length);
+//     // $('.blockcards').toggleClass('visibleblock');
+//     // $('.block_button_custom__left').toggleClass('bold_text');
+//     // $('.block_button_custom__right').toggleClass('bold_text');
+
+
+//     // $('.blockcardsitem').removeClass('itemactive');
+//     // $('.blockcards > .itemwrap:nth-of-type(2) .blockcardsitem ').addClass('itemactive');
+    
+// });
+
+window.swithblockcards = function () {
     alert(3);
-    // $(this).toggleClass('btn_acnive');
+    // $('.block_button_custom__center').toggleClass('btn_acnive');
     // alert('l:' + $('.blockcards').length);
     // $('.blockcards').toggleClass('visibleblock');
     // $('.block_button_custom__left').toggleClass('bold_text');
@@ -9,8 +23,7 @@ $(document).on('click', '.block_button_custom__center', function(){
 
     // $('.blockcardsitem').removeClass('itemactive');
     // $('.blockcards > .itemwrap:nth-of-type(2) .blockcardsitem ').addClass('itemactive');
-    
-});
+}
 
 
 
