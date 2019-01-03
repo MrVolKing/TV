@@ -13,7 +13,7 @@
 // });
 
 window.swithblockcards = function () {
-    alert(3);
+    // alert(3);
     $('.block_button_custom__center').toggleClass('btn_acnive');
     // alert('l:' + $('.blockcards').length);
     $('.blockcards').toggleClass('visibleblock');
