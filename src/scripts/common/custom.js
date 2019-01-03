@@ -1,5 +1,5 @@
 $(document).on('click', '.block_button_custom__center', function(){
-    // alert(1);
+    alert(1);
     $('.block_button_custom__center').toggleClass('btn_acnive');
     $('.blockcards').toggleClass('visibleblock');
     $('.block_button_custom__left').toggleClass('bold_text');
