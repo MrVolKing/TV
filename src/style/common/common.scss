@@ -74,29 +74,29 @@
 }
 
 .callback{
-    width: em(220);
-    height: em(80);
-    border-radius: em(15);
+    width: 174px;
+    height: 80px;
+    border-radius: 15px;
     background-color: #c80600;
     display: flex;
     align-items: center;
     position: fixed;
-    padding: em(19) 0 em(19) em(21);
-    right: em(-20);
+    padding: 14px 0 14px 15px;
+    right: -20px;
     top: 46%;
     z-index: 12;
     cursor: pointer;
     span{
         font-family: "myriadPro";
-        font-size: em(24);
+        font-size: 20px;
         font-weight: 700;
         text-transform: uppercase;
         color: $white;
-        margin-left: em(18);
+        margin-left: 10px;
     }
     img{
-        width: em(34);
-        height: em(34);
+        width: em(24);
+        height: em(24);
     }
 }
 
