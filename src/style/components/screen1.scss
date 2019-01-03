@@ -1,10 +1,9 @@
 .main_screen{
     background-image: url(../images/screen1.png);
     background-repeat: no-repeat;
-    padding: 100px 0 212px 0;
-    // background-position-y: -100px;
-    // position: relative;
+    padding: 112px 0 212px 0;
     background-size: cover;
+    background-position-y: -30px;
 }
 
 
@@ -157,11 +156,11 @@
     
 }
 
-@media screen and (max-width: 1500px){
-    .main_screen{
-        padding: 50px 0 150px 0;
-    }
-}
+// @media screen and (max-width: 1500px){
+//     .main_screen{
+//         padding: 50px 0 150px 0;
+//     }
+// }
 
 @media screen and (max-width: 1270px){
     .main_screen_content{
