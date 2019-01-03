@@ -1,8 +1,8 @@
 $(document).on('click', '.block_button_custom__center', function(){
     alert(3);
-    $(this).toggleClass('btn_acnive');
-    alert('l:' + $('.blockcards').length);
-    $('.blockcards').toggleClass('visibleblock');
+    // $(this).toggleClass('btn_acnive');
+    // alert('l:' + $('.blockcards').length);
+    // $('.blockcards').toggleClass('visibleblock');
     // $('.block_button_custom__left').toggleClass('bold_text');
     // $('.block_button_custom__right').toggleClass('bold_text');
 
