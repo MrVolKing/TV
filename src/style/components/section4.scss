@@ -72,6 +72,9 @@
         flex-direction: column;
         padding-top: 25px;
         padding-left: 33px;
+        br{
+            display: none;
+        }
         .description{
             padding-left: 25px;
             color: #bcbcbc;
@@ -209,6 +212,17 @@
                     display: none;
                 }
             }
+            br{
+                display: block;
+            }
+            label{
+                display: flex;
+                margin-bottom: 6px;
+            }
+            .radio-custom{
+                margin-top: 7px;
+            }
+
         }
     }
 
