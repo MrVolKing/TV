@@ -1,15 +1,8 @@
-// console.log($('.block_button_custom__center'));
-
-alert('length:' + $('.block_button_custom__center').length);
-
-$('.block_button_custom__center').on('click' , function(){
-    alert(2);
-});
-
 $(document).on('click', '.block_button_custom__center', function(){
     alert(3);
-    // $('.block_button_custom__center').toggleClass('btn_acnive');
-    // $('.blockcards').toggleClass('visibleblock');
+    $(this).toggleClass('btn_acnive');
+    alert('l:' + $('.blockcards').length);
+    $('.blockcards').toggleClass('visibleblock');
     // $('.block_button_custom__left').toggleClass('bold_text');
     // $('.block_button_custom__right').toggleClass('bold_text');
 
