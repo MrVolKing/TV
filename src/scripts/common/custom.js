@@ -41,7 +41,7 @@ window.swithblockcards = function () {
 
 
 
-    $(document).on('click', '.itemwrap', function(){
+    $(document).on('mouseover', '.itemwrap', function(){
         $('.blockcardsitem').removeClass('itemactive');
         $(this).find('.blockcardsitem').addClass('itemactive');
     });
