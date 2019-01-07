@@ -1,8 +1,13 @@
 .modalDialog
-    .callbackpopap
-        .blockcallback callback
-        .closebutton
-            img(src="./images/close.png", alt="")
+    .formpopap
+        form
+            .formwrap
+                textarea(type="text", placeholder="Przedstaw się")
+                textarea(type="tel", placeholder="Zostaw swój numer")
+                .closebutton
+                    img(src="./images/close.png", alt="")
+                .blockbutton
+                    button.button Zamówić telefon
             
 
 .modalDialog2
@@ -10,12 +15,12 @@
         form
             .formwrap
                 .title
-                    p fill this form to watch planeta pl 
-                        span platinum
+                    p WYPEŁNIJ TĄ TABELĘ, ŻEBY OBEJRZEĆ PLANETA PL 
+                        span PLATINUM
                 textarea(type="text", placeholder="introduce yourself")
-                textarea(type="text", placeholder="leave your email")
+                textarea(type="email", placeholder="leave your email")
                 textarea(type="text", placeholder="where do you live?")
-                textarea(type="text", placeholder="leave your number")
+                textarea(type="tel", placeholder="leave your number")
                 .check
                     label.checkboxcustom
                         input(class="checkbox", type="checkbox", name="radio-test", checked)

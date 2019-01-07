@@ -11,9 +11,12 @@
     display: flex;
     justify-content: space-between;
     .left{
-        padding-top: 50px;
-        span{
+        h1{
             color: $buttoncolor;
+        }
+        margin-left: -67px;
+        span{
+            color: $white;
         }
     }
     .right{

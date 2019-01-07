@@ -11,7 +11,7 @@
             background-color:  #f7f7f7;
             padding-bottom: 18px;
             // height: 1600px;
-            width: 453px;
+            width: 553px;
             border-top-right-radius: 14px;
             border-top-left-radius: 14px;
             &__titleblock{
@@ -28,6 +28,9 @@
                 overflow: hidden;
                 position: relative;
                 border-bottom-right-radius: 14px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-bottom-left-radius: 14px;
                 .badge{
                     background-color: red;
                     height: 30px;
@@ -46,7 +49,7 @@
                 }
             }
             &__paragraph{
-                padding: 26px 0 23px 33px;
+                padding: 26px 0 23px 80px;
                 span{
                     color: $titlecolor;
                     font-family: "titillium";
@@ -71,7 +74,7 @@
         display: flex;
         flex-direction: column;
         padding-top: 25px;
-        padding-left: 13px;
+        padding-left: 80px;
         br{
             display: none;
         }
@@ -85,19 +88,22 @@
         }
         label{
             margin-bottom: 6px;
+            .smol{
+                font-size: 16px;
+            }
         }
         .label{
             color: #000000;
             font-family: myriadPro;
             line-height: 30px;
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 400;
             text-transform: uppercase;
             // margin-bottom: 6px;
             span{
                 color: $buttoncolor;
-                font-family: raleway;
-                font-weight: 400;
+                // font-family: raleway;
+                font-weight: 700;
             }
         }
     }
