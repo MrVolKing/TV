@@ -63,10 +63,14 @@
 //     font-size: 0.833vw;
 // }
 
-@media screen and (max-width: 1500px){
-    html{
-        zoom: 0.75;
-    }
+// @media screen and (max-width: 1500px){
+//     html{
+//         zoom: 0.75;
+//     }
+// }
+
+html{
+    zoom: 0.75;
 }
 
 @media screen and (max-width: 500px){
