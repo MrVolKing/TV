@@ -88,9 +88,9 @@
         }
         label{
             margin-bottom: 6px;
-            .smol{
-                font-size: 16px;
-            }
+            // .smol{
+            //     font-size: 16px;
+            // }
         }
         .label{
             color: #000000;
@@ -98,10 +98,10 @@
             line-height: 30px;
             font-size: 22px;
             font-weight: 400;
-            text-transform: uppercase;
+            text-transform: capitalize;
             // margin-bottom: 6px;
             span{
-                color: $buttoncolor;
+                color: red;
                 // font-family: raleway;
                 font-weight: 700;
             }
@@ -249,6 +249,9 @@
         span{
             font-size: 17px;
         }
+    }
+    .section4_content .block_radiobutton{
+        padding-left: 20px;
     }
    
      
