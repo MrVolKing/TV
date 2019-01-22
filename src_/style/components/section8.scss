@@ -1,0 +1,118 @@
+.section8{
+    background-image: url(../images/bottombg.png);
+    background-repeat: no-repeat;
+    padding: 70px 0 70px 0;
+    background-size: cover;
+    background-position-y: -2px;
+}
+
+.section8_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__left{
+        .lefttitle{
+            line-height: 36px;
+            height: 87px;
+            span{
+                text-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+                color: $white;
+                font-family: "titillium";
+                font-size: 50px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__right{
+        .form_content{
+            display: flex;
+            // padding-top: 12px;
+            textarea{
+                border: 4px solid $white;
+                background-color: $bgcolorgrey;
+                width: 394px;
+                height: 66px;
+                border-radius: 8px;
+                font-size: 18px;
+                padding-left: 16px;
+                resize: none;
+                padding-top: 20px;
+                @include placeholder{
+                    font-family: "myriadPro";
+                    font-size: 18px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: $textcolor;
+                }
+            }
+            button{
+                width: 281px;
+                margin-left: 20px;
+            }
+        }
+        
+    }
+    
+}
+
+@media screen and (max-width: 1230px){
+    .section8{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .section8_content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .section8_content{
+        &__right{
+            .form_content{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                button{
+                    margin-top: 30px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 500px){
+    .section8{
+        padding: 40px 0;
+    }
+    .section8_content{
+        &__left{
+            .lefttitle{
+                text-align: center;
+                span{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .section8_content{
+        &__right{
+            .form_content{
+                textarea{
+                    width: 100%;
+                    font-size: 16px;
+                    padding-top: 22px;
+                    padding-left: 10px;
+                    @include placeholder{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

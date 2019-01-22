@@ -1,0 +1,212 @@
+.main_screen{
+    background-image: url(../images/screen1.png);
+    background-repeat: no-repeat;
+    padding: 112px 0 212px 0;
+    background-size: cover;
+    background-position-y: -30px;
+}
+
+
+.main_screen_content{
+    display: flex;
+    justify-content: space-between;
+    .left{
+        h1{
+            color: $buttoncolor;
+        }
+        margin-left: -67px;
+        span{
+            color: $white;
+        }
+    }
+    .right{
+        width: 446px;
+        .formwrap{
+            padding: 33px 32px 53px 32px;
+            background-color: rgba(255, 255, 255, .35);
+            .title{
+                p{
+                    font-family: "myriadPro";
+                    font-size: 24px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: $white;
+                    span{
+                        color: #f50000;
+                    }
+                }
+            }
+            textarea{
+                width: 100%;
+                height: 53px;
+                border-radius: 3px;
+                border: 2px solid #f50000;
+                background-color: $white;
+                margin-bottom: 20px;
+                padding-left: 20px;
+                font-size: 18px;
+                resize: none;
+                padding-top: 14px;
+                @include placeholder{
+                    font-family: "myriadPro";
+                    font-size: 18px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: $textcolor;
+                    // padding: 20px 0 0 0;
+                    
+                }
+            }
+            .check{
+                input{
+                    display: none;
+                }
+                label{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .checkboxcustom{
+                
+                .label{
+                    text-transform: uppercase;
+                    line-height: 12px;
+                    margin-top: 1px;
+                    margin-right: 0;
+                    width: 87%;
+                }
+            }
+        }
+        .blockbutton{
+            button{
+                width: 100%;
+                margin-top: 24px;
+            }
+        }
+    }
+
+    // check
+
+
+    .checkbox, 
+    .radio {
+        display: none;
+    }
+
+    .checkbox-custom,
+    .radio-custom {
+        position: relative;     
+        width: 26px;             
+        height: 26px;            
+        background-color:  black;
+        border-radius: 50%;
+        // border: 2px solid $black;
+    }
+
+    .checkbox-custom,
+    .label,
+    .radio-custom {
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        
+    }
+
+    .checkbox:checked + .checkbox-custom::before {
+        content: url(../images/check.png); 
+        background-color: black;
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;            
+        display: block;          
+        position: absolute;  
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    .radio-custom,
+    .radio:checked + .radio-custom::before {
+        border-radius: 50%;
+    }
+
+
+    .radio-custom {
+        position: relative;     
+        width: 26px;             
+        height: 26px; 
+        border: 1px solid black;
+        border-radius: 50%;           
+        background-color: $white;
+    }
+
+    .radio:checked + .radio-custom{
+        border: 1px solid $buttoncolor;
+    }
+
+    .radio:checked + .radio-custom::before {
+        content: '';  
+        height: 6px;
+        width: 6px;
+        background-color: $buttoncolor;           
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    
+    
+}
+
+// @media screen and (max-width: 1500px){
+//     .main_screen{
+//         padding: 50px 0 150px 0;
+//     }
+// }
+
+@media screen and (max-width: 1270px){
+    .main_screen_content{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1010px){
+    .main_screen{
+        background-size: cover;
+        padding: 100px 0px 140px 0;
+    }
+    .main_screen_content{
+        justify-content: center;
+        .left{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .main_screen{
+        padding: 0 0px 140px 0;
+    }
+    .main_screen_content{
+        .right{
+            .formwrap{
+                padding: 16px;
+                .title{
+                    margin-bottom: 6px;
+                    p{
+                        font-size: 20px;
+                    }
+                }
+                textarea{
+                    font-size: 16px;
+                    padding-top: 16px;
+                    padding-left: 10px;
+                    @include placeholder{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

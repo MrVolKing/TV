@@ -5,7 +5,7 @@
 
 .section7_content{
     display: flex;
-    padding-left: 0;  // padding0 for en version
+    padding-left: 76px;
     .left7{
         img{
             border: 1px solid #e8e8e8;
@@ -45,8 +45,7 @@
         &__button{
             padding-top: 42px;
             button{
-                width: auto;
-                padding: 0 23px;  //  padding 10 for en version
+                width: 334px;
             }
             button:first-child{
                 margin-right: 45px;

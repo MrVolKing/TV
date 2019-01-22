@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+
+
+@font-face {
+    font-family: myriadPro; /* Имя шрифта */
+    src: url(../fonts/MyriadPro-Regular.ttf); // 400
+    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: myriadPro; /* Имя шрифта */
+    src: url(../fonts/MyriadPro-Bold.ttf); // 700
+    
+    font-weight: 700;
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: myriadPro; /* Имя шрифта */
+//     src: url(../fonts/MyriadPro-Black.ttf); // 900
+    
+//     font-weight: 900;
+//     font-style: normal;
+// }
+
+@font-face {
+    font-family: titillium; /* Имя шрифта */
+    src: url(../fonts/TitilliumWeb-Regular.ttf); // 400
+    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: titillium; /* Имя шрифта */
+    src: url(../fonts/TitilliumWeb-Bold.ttf); // 700
+    
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: raleway; /* Имя шрифта */
+    src: url(../fonts/Raleway-Regular.ttf); // 400
+    
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+*{
+    font-family: myriadPro;  
+}
+
+// html{
+//     font-size: 0.833vw;
+// }
+
+// @media screen and (max-width: 1500px){
+//     html{
+//         zoom: 0.75;
+//     }
+// }
+
+html{
+    zoom: 0.75;
+}
+
+@media screen and (max-width: 500px){
+    html{
+        zoom: 0.85;
+    }
+}
+
+.content{
+    overflow: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+.callback{
+    width: 174px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: #c80600;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding: 14px 0 14px 15px;
+    right: -20px;
+    top: 46%;
+    z-index: 12;
+    cursor: pointer;
+    span{
+        font-family: "myriadPro";
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white;
+        margin-left: 10px;
+    }
+    img{
+        width: em(24);
+        height: em(24);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .callback{
+        width: 80px;
+        height: 60px;
+        border: 1px solid $black;
+        img{
+            width: 30px;
+        }
+        span{
+            margin-left: 18px;
+        }
+    }
+}

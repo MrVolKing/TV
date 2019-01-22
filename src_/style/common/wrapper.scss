@@ -1,0 +1,150 @@
+.wrapper{
+    position: relative;
+    width: 1260px;
+    padding: 0 15px;
+    margin: 0 auto;
+}  
+
+// .wrappercontent{
+//     position: relative;
+//     h1{
+//         font-size: 24px;
+//         font-weight: 700;
+//         line-height: 21px;
+//         margin: 0 !important;
+//         padding: 5px 0 5px 0;
+//         color: $white;
+//     }
+//     h2{
+//         font-size: 21px;
+//         font-weight: 700;
+//         line-height: 18px;
+//         margin: 0 !important;
+//         padding: 5px 0;
+//         color: $white;
+//     }
+//     h3{
+//         font-size: 18px;
+//         font-weight: 700;
+//         line-height: 18px;
+//         margin: 0 !important;
+//         padding: 5px 0;
+//         color: $white;
+//     }
+//     h4{
+//         font-size: 16px;
+//         font-weight: 700;
+//         line-height: 18px;
+//         margin: 0 !important;
+//         padding: 5px 0;
+//         color: $white;
+//     }
+
+//     img{
+//         width: 100%;
+//         height: 100%;
+//         border-radius: 4px;
+//         margin: 5px 0;
+//     }
+
+//     p, b, i, ol, ul, u, s, a {
+//         font-size: 16px;
+//         font-weight: 400;
+//         line-height: 18px;
+//         margin: 0 !important;
+//         padding: 5px 0;
+//         color: $white;
+//     }
+
+//     b{
+//         font-weight: 700;
+//     }
+
+//     a{
+//         color: $blue;
+//     }
+
+//     a:hover{
+//         text-decoration: underline;
+//     }
+
+//     iframe{
+//         width: 100%;
+//         height: 600px;
+//         margin: 5px 0;
+//     }
+//     @media screen and (max-width: 767px) {
+//         iframe{
+//             height: 300px;
+//         }
+//     }
+
+//     ol{
+//         font-size: 16px;
+//         font-weight: 400;
+//         line-height: 20px;
+//         padding: 5px 0 5px 0px !important;
+//         counter-reset: list 0;
+//         margin: 0 !important;
+//         li{
+//             list-style: none;
+//             padding-left: 20px;
+//             position: relative;
+//         }
+//         li:before {
+//             counter-increment: list; /* Увеличиваем значение счетчика */
+//             content: counter(list) ". "; /* Выводим число */
+//             font-weight: 800;
+//             margin-right: 9px;
+//             position: absolute;
+//             left: 0;
+//         }
+//     }
+
+//     ul{
+//         font-size: 16px;
+//         font-weight: 400;
+//         line-height: 20px;
+//         padding: 5px 0 5px 32px !important;
+//         position: relative;
+//         margin: 0 !important;
+//         li{
+//             list-style: none;
+//         }
+//         li:before {
+//             content:''; 
+//             width: 18px;
+//             height: 3px;
+//             border-radius: 1.5px;
+//             position: absolute;
+//             background-color: $blue;
+//             left: 0px;
+//             margin-top: 8px;
+//             content: '';
+//         }
+//     }
+
+//     blockquote{
+//         background-color: $blue !important;
+//         margin: 5px 0;
+//         width: 100%;
+//         height: auto;
+//         padding: 28px 21px 47px 25px;
+//         color: $white;
+//         font-size: 16px;
+//         font-weight: 400;
+//         line-height: 18px;
+//     }
+// }
+
+@media screen and (max-width: 1270px){
+    .wrapper{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
