@@ -69,6 +69,7 @@
     .blockcards{
         display: none;
         align-items: center;
+        padding-top: 60px;
         .blockcardsitem{
             width: 407px;
             height: 538px;
@@ -79,7 +80,7 @@
             &__texttop{
                 height: 258px;
                 background-color: #d44c3d;
-                padding: 38px 0 92px 30px;
+                padding: 38px 5px 92px 10px;
                 border-radius: 8px;
                 position: relative;
                 margin-bottom: 40px;
@@ -89,8 +90,8 @@
                     font-weight: 700;
                     text-transform: uppercase;
                     color: $white;
-                    margin-top: 40px;
-                    width: 145px;
+                    margin-top: 30px;
+                    width: 175px;
                     line-height: 30px;
                     padding-bottom: 37px;
                 }
@@ -108,7 +109,7 @@
                 img{
                     position: absolute;
                     bottom: -8px;
-                    right: 30px;
+                    right: 10px;
                     width: 148px;
                     height: 141px;
                 }
@@ -156,7 +157,8 @@
             height: 589px;
             .blockcardsitem__texttop{
                 background-color: #d50506;
-                padding: 38px 33px 0 30px;
+                // padding: 38px 33px 0 30px;
+                padding: 38px 15px 92px 15px;
             }
             .section5_button{
                 margin: 10px 0;
